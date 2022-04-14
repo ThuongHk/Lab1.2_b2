@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bài tập (Hướng dẫn): Những lệnh Git căn bản Mục tiêu và đầu ra Trong bài tập này bạn sẽ làm quen với một vài lệnh Git. Ở cuối bài bạn sẽ có thể làm được: ● Cài đặt folder như một Git repo ● Thực hiện những thao tác Git căn bản cho kho Git repo Những lệnh
+    Git căn bản ● Tạo một thư mục tên git-test trong một vị trí thuận lợi ở máy tính bạn. ● Mở folder git-test từ trình soạn code bạn hay dùng ● Thêm vào file có tên index.html vào folder, và thêm đoạn code HTML sau vào file: 12345678
+    <!DOCTYPE html>
+    <html>
+
+    <head></head>
+
+    <body>
+        <h1>This is a Header</h1>
+    </body>
+
+    </html>
+    Tổ chức folder như một Git repo ● Đi đến git-test folder ở cửa sổ lệnh cmd window/terminal và gõ những dòng sau ở cửa sổ lệnh để khởi tạo folder như một kho Git repo: 1 git init Xem trạng thái kho Git repo ● Gõ những dòng lệnh sau để xem trạng thái kho
+    Git repo: 1 git status Thêm file vào khu vực tổ chức ● Thêm file vào khu vực tổ chức của kho Git repo: 1 git add . Commit lên kho git repo ● Để commit lên kho git repo hiện tại, gõ: 1 git commit -m "first commit" Xem cửa sổ log của git commit ● Để
+    xem cửa sổ log cho commit của kho git repo, gõ 1 git log --oneline ● Giờ hãy định hình file index.html file như dưới đây: 123456789
+    <!DOCTYPE html>
+    <html>
+
+    <head></head>
+
+    <body>
+        <h1>This is a Header</h1>
+        <p>This is a paragraph</p>
+    </body>
+
+    </html>
+    ● Thêm một folder phụ có tên templates cho thư mục git-test, và thêm một file có tên test.html cho folder templates. Và đặt nội dung của file giống như file index.html bên trên. ● Rồi kiểm tra trạng thái và thêm tất cả file vào khu vực tổ chức. ● Rồi
+    thực hiện commit thứ 2 với kho repo của bạn ● GIờ hãy thiết lập file index.html như dưới đây: 12345678910
+    <!DOCTYPE html>
+    <html>
+
+    <head></head>
+
+    <body>
+        <h1>This is a Header</h1>
+        <p>This is a paragraph</p>
+        <p>This is a second paragraph</p>
+    </body>
+
+    </html>
+    ● Giờ hãy thêm file index.html đã được sửa đổi vào khu vực tổ chức và thực hiện lần commit thứ 3. Kiểm tra file từ lượt commit trước đó ● Để xét file index.html từ lượt commit thứ 2, tìm số lượt của lần commit thứ 2 dùng git log, và rồi gõ lệnh theo dòng
+    dưới đây: 1 git checkout
+    <second commit number> index.html Reset lại kho the Git repo ● Để loại bỏ sự ảnh hưởng của quá trình trước và khôi phục index.html về với trạng thái ở lần commit thứ 3, gõ: 1 git reset HEAD index.html ● Giờ hãy gõ theo dòng sau: 1 git checkout -- index.html ● Bạn cũng có
+        thể dùng git reset cho khu vực tổ chức cho đến lần commit cuối mà không phải gián đoạn thư mục làm việc Kết luận Ở cuối bài học này bạn nên học được những lệnh git căn bản. Hãy thực hành với những lệnh này đến khi bạn hoàn toàn hiểu được cách
+        sử dụng git.
+
+
+</body>
+
+</html>
